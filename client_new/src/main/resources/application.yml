@@ -1,0 +1,21 @@
+currencyRateProvider:
+  url: "http://localhost:8080/currencyRate/getRate"
+  name: "Currency rate provider"
+
+server:
+  port: 8081 #port on app is started
+
+spring:
+  application:
+    name: eureka-client-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:8761/eureka/
