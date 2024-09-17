@@ -1,0 +1,6 @@
+currencyRateProvider:
+  url: "http://localhost:8080/currencyRate/getRate"
+  name: "Currency rate provider"
+
+server:
+  port: 8081 #port on app is started
